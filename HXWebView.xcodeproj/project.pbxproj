@@ -16,6 +16,10 @@
 		F29AC61C1CB55813004899B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29AC61A1CB55813004899B1 /* LaunchScreen.storyboard */; };
 		F29AC6271CB55814004899B1 /* HXWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AC6261CB55814004899B1 /* HXWebViewTests.m */; };
 		F29AC6321CB55814004899B1 /* HXWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AC6311CB55814004899B1 /* HXWebViewUITests.m */; };
+		F29AC6411CB5583B004899B1 /* HXWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AC6401CB5583B004899B1 /* HXWebView.m */; };
+		F29AC6441CB603EE004899B1 /* indexJS.html in Resources */ = {isa = PBXBuildFile; fileRef = F29AC6421CB603EE004899B1 /* indexJS.html */; };
+		F29AC6451CB603EE004899B1 /* indexJS.js in Resources */ = {isa = PBXBuildFile; fileRef = F29AC6431CB603EE004899B1 /* indexJS.js */; };
+		F2A165AF1CB8A00800D62AE5 /* openCamera.js in Resources */ = {isa = PBXBuildFile; fileRef = F2A165AE1CB8A00800D62AE5 /* openCamera.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,11 @@
 		F29AC62D1CB55814004899B1 /* HXWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HXWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29AC6311CB55814004899B1 /* HXWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXWebViewUITests.m; sourceTree = "<group>"; };
 		F29AC6331CB55814004899B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29AC63F1CB5583B004899B1 /* HXWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXWebView.h; sourceTree = "<group>"; };
+		F29AC6401CB5583B004899B1 /* HXWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXWebView.m; sourceTree = "<group>"; };
+		F29AC6421CB603EE004899B1 /* indexJS.html */ = {isa = PBXFileReference; explicitFileType = sourcecode.javascript; fileEncoding = 4; path = indexJS.html; sourceTree = "<group>"; };
+		F29AC6431CB603EE004899B1 /* indexJS.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = indexJS.js; sourceTree = "<group>"; };
+		F2A165AE1CB8A00800D62AE5 /* openCamera.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = openCamera.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +116,11 @@
 				F29AC60D1CB55813004899B1 /* AppDelegate.m */,
 				F29AC60F1CB55813004899B1 /* ViewController.h */,
 				F29AC6101CB55813004899B1 /* ViewController.m */,
+				F29AC6421CB603EE004899B1 /* indexJS.html */,
+				F29AC6431CB603EE004899B1 /* indexJS.js */,
+				F2A165AE1CB8A00800D62AE5 /* openCamera.js */,
+				F29AC63F1CB5583B004899B1 /* HXWebView.h */,
+				F29AC6401CB5583B004899B1 /* HXWebView.m */,
 				F29AC6121CB55813004899B1 /* Main.storyboard */,
 				F29AC6181CB55813004899B1 /* Assets.xcassets */,
 				F29AC61A1CB55813004899B1 /* LaunchScreen.storyboard */,
@@ -246,6 +260,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29AC6451CB603EE004899B1 /* indexJS.js in Resources */,
+				F2A165AF1CB8A00800D62AE5 /* openCamera.js in Resources */,
+				F29AC6441CB603EE004899B1 /* indexJS.html in Resources */,
 				F29AC61C1CB55813004899B1 /* LaunchScreen.storyboard in Resources */,
 				F29AC6191CB55813004899B1 /* Assets.xcassets in Resources */,
 				F29AC6141CB55813004899B1 /* Main.storyboard in Resources */,
@@ -276,6 +293,7 @@
 				F29AC6111CB55813004899B1 /* ViewController.m in Sources */,
 				F29AC60E1CB55813004899B1 /* AppDelegate.m in Sources */,
 				F29AC60B1CB55813004899B1 /* main.m in Sources */,
+				F29AC6411CB5583B004899B1 /* HXWebView.m in Sources */,
 				F29AC6171CB55813004899B1 /* HXWebView.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +520,7 @@
 				F29AC6381CB55814004899B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F29AC6391CB55814004899B1 /* Build configuration list for PBXNativeTarget "HXWebViewTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +529,7 @@
 				F29AC63B1CB55814004899B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F29AC63C1CB55814004899B1 /* Build configuration list for PBXNativeTarget "HXWebViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +538,7 @@
 				F29AC63E1CB55814004899B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
