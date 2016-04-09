@@ -10,9 +10,6 @@
 #import <WebKit/WebKit.h>
 @class UIWebView, WKWebView;
 
-// MAX_IOS_VERSION 大于等于 8.0, 不可小于 8.0
-#define MAX_IOS_VERSION 8.0
-
 @interface HXWebView : UIView {
     @private
     UIWebView *_webView;

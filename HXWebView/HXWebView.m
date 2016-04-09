@@ -8,10 +8,27 @@
 
 #import "HXWebView.h"
 
+// MAX_IOS_VERSION 大于等于 8.0, 不可小于 8.0
+#define MAX_IOS_VERSION 8.0
+
 @interface HXWebView () <UIWebViewDelegate, WKScriptMessageHandler, WKNavigationDelegate, WKUIDelegate>
 
+/**
+ *  @author huangxiong, 2016/04/09 11:43:18
+ *
+ *  @brief 系统版本
+ *
+ *  @since 1.0
+ */
 @property (nonatomic, assign)  CGFloat systemVersion;
 
+/**
+ *  @author huangxiong, 2016/04/09 11:42:46
+ *
+ *  @brief js 消息处理回调字典
+ *
+ *  @since 1.0
+ */
 @property (nonatomic, strong) NSMutableDictionary<NSString *, void(^)(id)> *blockDictionary;
 
 @end
@@ -30,9 +47,7 @@
         } else {
             WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
             config.userContentController = [[WKUserContentController alloc] init];
-            
             _wkWebView = [[WKWebView alloc] initWithFrame: self.bounds configuration: config];
-            _wkWebView.backgroundColor = [UIColor redColor];
             _wkWebView.navigationDelegate = self;
             [self addSubview: _wkWebView];
         }
