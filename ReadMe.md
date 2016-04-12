@@ -55,3 +55,13 @@ NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString: path
     NSLog(@"结果是: %@", result);
 } name: @"openCameraMoreAndMore"];
  ```
+
+ ```Objective-C
+ - (HXWebView *)webView {
+    if (_webView == nil) {
+        _webView = [[HXWebView alloc] initWithFrame: self.view.bounds];
+        [self.view addSubview: _webView];
+    }
+    return _webView;
+}
+```
