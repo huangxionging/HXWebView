@@ -39,3 +39,19 @@ window.webkit.messageHandlers.xxxx.postMessage(yyyy) (适用于 iOS 8以后版�
 若 js 使用 window.webkit.messageHandlers.xxxx.postMessage(yyyy), name 则为名字 xxxx. 所有 block 和 name 
 一一对应, 使用 NSMutableDictionary 存储, 每次根据 name 查询 block, 并调用不同的 block.
 ```
+
+##使用
+```Objective-C
+NSString *path = [[NSBundle mainBundle] pathForResource: @"indexJS" ofType: @"html"];
+    
+NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString: path]];
+[self.webView loadRequest: request];
+    
+[self.webView addScriptMessageHandlerBlock:^(id result) {
+    NSLog(@"结果是: %@", result);
+} name: @"openCameraMore"];
+
+[self.webView addScriptMessageHandlerBlock:^(id result) {
+    NSLog(@"结果是: %@", result);
+} name: @"openCameraMoreAndMore"];
+ ```
