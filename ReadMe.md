@@ -65,3 +65,41 @@ NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString: path
     return _webView;
 }
 ```
+
+```jsvascript
+function openAndOpen() {
+   window.location.href = "bleto://openCameraMore/actions"
+}
+function openCameraMoreAndMore() {
+    window.webkit.messageHandlers.openCameraMoreAndMore.postMessage("bleto://more");
+}
+
+function openChange() {
+    var array = ["900", "800"];
+        window.webkit.messageHandlers.openCameraMoreAndMore.postMessage(array);
+}
+```
+```html
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<body>
+		<button onclick="myFuction()" type="submit">点击按钮</button> 
+		<script type="text/javascript" src="indexJS.js"> </script>
+		<br>
+		<br>
+		<br>
+		<button onclick="openCamera()" type="submit">打开相机</button>
+        <br>
+        <button onclick="openCameraMore()" type="submit">打开相机相机</button>
+        <script type = "text/javascript" src = "openCamera.js"> </script>
+        <br>
+        <button onclick="openCameraMoreAndMore()" type="submit">OK</button>
+        <br>
+        <button onclick="openChange()" type="submit">change function</button>
+        <br>
+        <button onclick="openAndOpen()" type="submit">openAndOpen</button>
+        
+	</body>	
+</html>
+```
