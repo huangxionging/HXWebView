@@ -36,6 +36,6 @@ window.webkit.messageHandlers.xxxx.postMessage(yyyy) (适用于 iOS 8以后版�
   
 2. addScriptMessageHandlerBlock 中的 name 用作对应的标识符
 若 js 使用 window.location.href = "aaaa://xxxx/zzzz, name 对应为 url 的 host xxxx, 每个 host 对应一个 block.
-若 js 使用 window.webkit.messageHandlers.xxxx.postMessage(yyyy), name 则为名字 xxxx. 所有 block 和 name 一一对应,
-使用 NSMutableDictionary 存储, 每次根据 name 查询 block, 并调用不同的 block.
+若 js 使用 window.webkit.messageHandlers.xxxx.postMessage(yyyy), name 则为名字 xxxx. 所有 block 和 name 
+一一对应, 使用 NSMutableDictionary 存储, 每次根据 name 查询 block, 并调用不同的 block.
 ```
