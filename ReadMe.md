@@ -9,7 +9,7 @@
 `iOS`and native web page interaction webView 
 controls to UIWebView and WKWebView based on the 
 use of block callback to transfer data web and 
-native pages, easy to use. (使用谷歌翻译)
+native pages, easy to use. (使用谷歌翻译:smile)
 *** 
 
 ## 如何开始
