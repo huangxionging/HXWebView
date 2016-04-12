@@ -25,6 +25,6 @@ native pages, easy to use. (使用谷歌翻译:smile:)
 |- (void)loadHTMLString:(NSString *)string baseURL:(NSURL *)baseURL;| 加载 html 数据| html 数据和访问目录|
 |- (void)loadData:(NSData *)data MIMEType:(NSString *)MIMEType textEncodingName:(NSString *)textEncodingName baseURL:(NSURL *)baseURL; |加载二进制数据| 二进制 data, 多媒体文件类型, 文本编码以及访问目录|
 |- (void)loadFileURL:(NSURL *)URL allowingReadAccessToURL:(NSURL *)readAccessURL;| 加载文件| 文件 URL和目录|
-|- (void) addScriptMessageHandlerBlock: (void(^)(id result)) block name:(NSString *) name;| 添加处理消息的回调| block 和 对应的名称 |
+|```Objective-C - (void) addScriptMessageHandlerBlock: (void(^)(id result)) block name:(NSString *) name;```| 添加处理消息的回调| block 和 对应的名称 |
 
 
