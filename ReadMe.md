@@ -40,6 +40,7 @@ window.webkit.messageHandlers.xxxx.postMessage(yyyy) (适用于 iOS 8以后版�
 一一对应, 使用 NSMutableDictionary 存储, 每次根据 name 查询 block, 并调用不同的 block.
 ```
 
+##<a name="Objective-C"/> Objective-C
 ##使用
 ```Objective-C
 NSString *path = [[NSBundle mainBundle] pathForResource: @"indexJS" ofType: @"html"];
@@ -66,7 +67,8 @@ NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString: path
 }
 ```
 
-```jsvascript
+##<a name="javascript"/> javascript
+```javascript
 function openAndOpen() {
    window.location.href = "bleto://openCameraMore/actions"
 }
@@ -79,6 +81,8 @@ function openChange() {
         window.webkit.messageHandlers.openCameraMoreAndMore.postMessage(array);
 }
 ```
+
+##<a name="html"/> html
 ```html
 <!DOCTYPE html>
 <html>
@@ -103,3 +107,25 @@ function openChange() {
 	</body>	
 </html>
 ```
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<body>
+		<button onclick="myFuction()" type="submit">点击按钮</button> 
+		<script type="text/javascript" src="indexJS.js"> </script>
+		<br>
+		<br>
+		<br>
+		<button onclick="openCamera()" type="submit">打开相机</button>
+        <br>
+        <button onclick="openCameraMore()" type="submit">打开相机相机</button>
+        <script type = "text/javascript" src = "openCamera.js"> </script>
+        <br>
+        <button onclick="openCameraMoreAndMore()" type="submit">OK</button>
+        <br>
+        <button onclick="openChange()" type="submit">change function</button>
+        <br>
+        <button onclick="openAndOpen()" type="submit">openAndOpen</button>
+        
+	</body>	
+</html>
