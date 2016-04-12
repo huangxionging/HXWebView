@@ -47,7 +47,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "141"
             endingLineNumber = "141"
-            landmarkName = "-webView:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:completionHandler:"
+            landmarkName = "-webView:didReceiveServerRedirectForProvisionalNavigation:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -63,7 +63,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "106"
             endingLineNumber = "106"
-            landmarkName = "-webView:didStartProvisionalNavigation:"
+            landmarkName = "-webView:didCommitNavigation:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

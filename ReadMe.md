@@ -18,3 +18,8 @@ native pages, easy to use. (使用谷歌翻译:smile:)
 * 查看源代码了解工作原理. 
 * 在项目中嵌入 HXWebView
 
+## HXWebView 结构
+| HXWebView method       |      brief             | parameter | 
+|:----------------------:|:----------------------:| :--------:|
+| - (void)loadRequest:(NSURLRequest *)request; | 请求网络数据 | NSURLRequest 网络请求|
+
